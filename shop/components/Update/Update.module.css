@@ -1,0 +1,30 @@
+.modal {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+}
+
+
+.btnModal {
+    padding: 5px 15px;
+    border: 2px solid rgba(126, 127, 154, 0.5);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btnModal:hover {
+    background-color: rgba(126, 127, 154, 0.8);
+    color: #fff;
+}
+
+.status {
+    font-size: 20px;
+}
+
+.wrapBtn {
+    width: 100%;
+    display: flex;
+    column-gap: 10px;
+}
+

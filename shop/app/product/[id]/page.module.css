@@ -1,0 +1,142 @@
+.container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+
+}
+
+.container img {
+    max-width: 260px;
+}
+
+.card {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px 60px;
+    align-items: start;
+    justify-items: center;
+}
+
+.des {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.category { 
+    display: flex;
+    column-gap: 5px;
+    font-weight: 400;
+}
+
+.category p {
+    font-weight: 300;
+}
+
+.description {
+    font-size: 18px;
+}
+
+.line {
+    max-width: 900px;
+    height: 1px;
+    background-color: #000;    
+}
+
+
+
+.btns {
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+}
+
+.btns button {
+    padding: 5px 15px;
+    border: 2px solid rgba(126, 127, 154, 0.5);
+    border-radius: 5px;
+}
+
+.btns button:hover {
+    background-color: rgba(126, 127, 154, 0.8);
+    color: #fff;
+}
+
+@media (max-width: 659px){
+    .des {
+        max-width: 800px;
+    }
+    .card {
+        grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    
+}
+
+@media (min-width: 660px) and (max-width: 2000px) {
+    .des {
+        max-width: 800px;
+    }
+    .card {
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .title {
+        font-size: 35px;
+    }
+    
+    .price {
+        font-size: 40px;
+    }
+    
+    .description {
+        font-size: 25px;
+    }
+    .btns button {
+        font-size: 20px;
+    } 
+}
+
+
+
+@media (min-width: 2000px){
+    .des {
+        max-width: 800px;
+    }
+    .title {
+        font-size: 35px;
+    }
+    
+    .price {
+        font-size: 40px;
+    }
+    
+    
+    .description {
+        font-size: 25px;
+    } 
+
+    .btns button {
+        font-size: 25px;
+    }
+
+}
+
+
